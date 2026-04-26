@@ -33,3 +33,7 @@ class Tasker:
             
  def delete_task(self, task_id):  
     self.tasks = [t for t in self.tasks if t.id != task_id]
+ def confirm_action(self):
+     answ = input('Вы уверены (y/n): ')
+     return answ == 'y'
+ 
