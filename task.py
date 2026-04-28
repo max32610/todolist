@@ -6,3 +6,11 @@ class Task:
     self.priority = priority
    def mark_done(self):
       self.done = True
+   def to_dict(self):
+     return {
+        "id": self.id,
+        "task": self.task,
+        "priority": self.priority,
+        "done": self.done
+    }
+   
